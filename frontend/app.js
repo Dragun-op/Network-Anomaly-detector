@@ -310,6 +310,28 @@ function App() {
     fetchSummary().then(setSummary);
   }, []);
 
+  // Live updates: the replay worker pushes each new incident over this socket
+  // the instant it's scored, so the table updates without polling.
+  useEffect(() => {
+    const ws = new WebSocket(`${API_BASE.replace(/^http/, "ws")}/ws/incidents`);
+    ws.onmessage = (evt) => {
+      const inc = JSON.parse(evt.data);
+      setIncidents((prev) =>
+        prev.some((p) => p.id === inc.id) ? prev : [inc, ...prev],
+      );
+      setSummary((prev) =>
+        prev
+          ? {
+              ...prev,
+              total: prev.total + 1,
+              [inc.severity]: (prev[inc.severity] || 0) + 1,
+            }
+          : prev,
+      );
+    };
+    return () => ws.close();
+  }, []);
+
   function handleExpand(id) {
     if (expandedId === id) {
       setExpandedId(null);

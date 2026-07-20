@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "Benign": 2273097,
   "DoS": 252672,
@@ -7,4 +8,15 @@
   "WebAttack": 2180,
   "Bot": 1966,
   "Infiltration": 36
+=======
+{
+  "Benign": 2273097,
+  "DoS": 252672,
+  "PortScan": 158930,
+  "DDoS": 128027,
+  "BruteForce": 13835,
+  "WebAttack": 2180,
+  "Bot": 1966,
+  "Infiltration": 36
+>>>>>>> e4f20d959fad38b24f2e3bdebf58485884b212c3
 }

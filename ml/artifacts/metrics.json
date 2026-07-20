@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "algorithm": "LightGBM",
   "trained_at": "2026-07-20T03:25:21.808132+00:00",
@@ -159,4 +160,167 @@
     "Web Attack"
   ],
   "n_test": 424612
+=======
+{
+  "algorithm": "LightGBM",
+  "trained_at": "2026-07-20T03:25:21.808132+00:00",
+  "threshold": 0.05,
+  "precision": 0.9908,
+  "recall": 0.9998,
+  "false_positive_rate": 0.0023,
+  "classes": [
+    "BENIGN",
+    "Botnet",
+    "Brute Force",
+    "DDoS",
+    "DoS",
+    "Infiltration",
+    "Port Scan",
+    "Web Attack"
+  ],
+  "per_class": {
+    "BENIGN": {
+      "precision": 0.9999119092783021,
+      "recall": 0.9987183435249952,
+      "f1-score": 0.999314770007762,
+      "support": 340965.0
+    },
+    "Botnet": {
+      "precision": 0.6467889908256881,
+      "recall": 0.9559322033898305,
+      "f1-score": 0.771545827633379,
+      "support": 295.0
+    },
+    "Brute Force": {
+      "precision": 1.0,
+      "recall": 0.9985542168674699,
+      "f1-score": 0.9992765854834821,
+      "support": 2075.0
+    },
+    "DDoS": {
+      "precision": 0.9996876301541024,
+      "recall": 0.9998958550302021,
+      "f1-score": 0.9997917317504946,
+      "support": 19204.0
+    },
+    "DoS": {
+      "precision": 0.9965809268318342,
+      "recall": 0.9997625392469855,
+      "f1-score": 0.9981691977398154,
+      "support": 37901.0
+    },
+    "Infiltration": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 5.0
+    },
+    "Port Scan": {
+      "precision": 0.993911339088369,
+      "recall": 0.9997063758389262,
+      "f1-score": 0.9968004349735461,
+      "support": 23840.0
+    },
+    "Web Attack": {
+      "precision": 0.9728915662650602,
+      "recall": 0.9877675840978594,
+      "f1-score": 0.9802731411229135,
+      "support": 327.0
+    }
+  },
+  "macro_f1": 0.9431,
+  "confusion_matrix": [
+    [
+      340528,
+      153,
+      0,
+      6,
+      125,
+      1,
+      145,
+      7
+    ],
+    [
+      13,
+      282,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      2072,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      19202,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      1,
+      0,
+      0,
+      37892,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      4,
+      0,
+      23833,
+      1
+    ],
+    [
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      323
+    ]
+  ],
+  "confusion_labels": [
+    "BENIGN",
+    "Botnet",
+    "Brute Force",
+    "DDoS",
+    "DoS",
+    "Infiltration",
+    "Port Scan",
+    "Web Attack"
+  ],
+  "n_test": 424612
+>>>>>>> e4f20d959fad38b24f2e3bdebf58485884b212c3
 }
