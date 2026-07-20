@@ -29,3 +29,6 @@ network_traffix.db
 .env
 ml_artifacts/
 *.egg-info/
+
+ml/data/raw/
+ml/data/*.parquet
